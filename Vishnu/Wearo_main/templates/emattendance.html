@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+   <head>
+      <title>Attendance</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/emattendance.css') }}">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+	  <form action="/emdash/{{ ID }}">
+		  <button name="dashboard" type="submit">Go To Dashboard</button>
+	  </form>
+      <h2>ATTENDANCE</h2>
+      <div class="details">
+		  <form action="/emdash/attendance/check/{{ ID }}" method="post">
+			  SELECT<br />
+			  <select name = "select">
+				 <option value = "all">ALL</option>
+				 <option value = "PRESENT">PRESENT</option>
+				 <option value = "ABSENT">ABSENT</option>
+			  </select><br /><br />
+			  Start Date: <div class="underline"><input type="date" name="StartDate" required></div> <br />
+			  End Date: <div class="underline"><input type="date" name="EndDate">  <br /></div>
+			  <button type="submit" name= "form">SUBMIT</button>
+		  </form>
+		  {% if rows %}
+	      <div class="Attendance">
+	         <table border = 1>
+	         <thead>
+	            <td>TIMESTAMP</td>
+	            <td>STATUS</td>
+	         </thead>
+	         
+	         {% for row in rows %}
+	            <tr>
+	               <td>{{row["TIMESTAMP"]}}</td>
+	               <td>{{row["STATUS"]}}</td>
+	            </tr>
+	         {% endfor %}
+	         </table>
+	      </div>
+      	  {% endif %}
+      </div>
+      <p1 class = 'Error'>{{ Error }}</p1>
+   </body>
+</html>

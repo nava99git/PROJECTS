@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+   <head>
+      <title>Update Item</title>
+	  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/cupdate.css') }}">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+	  <form action="/admdash/{{ ID }}">
+		  <button name="dashboard" type="submit">Go To Dashboard</button>
+	  </form>
+    <h2>Fill Details</h2>
+    <div class="details">
+    <form action="/admdash/cupdate/check/{{ ID }}" method="post">
+        PRODUCT NAME: <div class="underline"><input type="text" name="UpdateItem" required></div>  <br />
+        PRICE: <div class="underline"><input type="number" name="UpdatePrice" required /></div>  <br />
+        <button type="submit" name= "form">Submit</button>
+    </form>
+    </div>
+    <p1 name = 'Error'>{{ Error }}</p1>
+   </body>
+</html>

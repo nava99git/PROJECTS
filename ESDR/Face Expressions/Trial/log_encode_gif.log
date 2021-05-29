@@ -1,0 +1,213 @@
+ffmpeg version 4.3.1-2021-01-01-essentials_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev5, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      56. 51.100 / 56. 51.100
+  libavcodec     58. 91.100 / 58. 91.100
+  libavformat    58. 45.100 / 58. 45.100
+  libavdevice    58. 10.100 / 58. 10.100
+  libavfilter     7. 85.100 /  7. 85.100
+  libswscale      5.  7.100 /  5.  7.100
+  libswresample   3.  7.100 /  3.  7.100
+  libpostproc    55.  7.100 / 55.  7.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument 'C:/Users/Navaneeth Krishnan/AppData/Local/Temp/KritaFFmpegProgress.viJmap'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '24'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument 'G:/WORKS/ESDR/Face Expressions/frame%04d.png'.
+Reading option '-i' ... matched as input url with argument 'G:/WORKS/ESDR/Face Expressions/palette.png'.
+Reading option '-lavfi' ... matched as option 'lavfi' (create a complex filtergraph) with argument '[0:v][1:v] paletteuse'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option 'G:/WORKS/ESDR/Face Expressions/Sad.gif' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument C:/Users/Navaneeth Krishnan/AppData/Local/Temp/KritaFFmpegProgress.viJmap.
+[file @ 0000011cbeade000] Setting default whitelist 'file,crypto,data'
+Applying option lavfi (create a complex filtergraph) with argument [0:v][1:v] paletteuse.
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url G:/WORKS/ESDR/Face Expressions/frame%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 24.
+Successfully parsed a group of options.
+Opening an input file: G:/WORKS/ESDR/Face Expressions/frame%04d.png.
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0000.png' for reading
+[file @ 0000011cbeb22ac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb2ac80] Statistics: 37656 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0001.png' for reading
+[file @ 0000011cbeb34340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 37656 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0002.png' for reading
+[file @ 0000011cbeb293c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 37656 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0003.png' for reading
+[file @ 0000011cbeb293c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 43263 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0004.png' for reading
+[file @ 0000011cbeb29700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 43263 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0005.png' for reading
+[file @ 0000011cbeb298c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 43263 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0006.png' for reading
+[file @ 0000011cbeb29a80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 45693 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0007.png' for reading
+[file @ 0000011cbeb29c80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 45693 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0008.png' for reading
+[file @ 0000011cbeb34d80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 45693 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0009.png' for reading
+[file @ 0000011cbeb34e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 44117 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0010.png' for reading
+[file @ 0000011cbeb34e40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 44117 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0011.png' for reading
+[file @ 0000011cbf6bad80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 44117 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0012.png' for reading
+[file @ 0000011cbf6bad80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 44378 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0013.png' for reading
+[file @ 0000011cbf6bad80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 44378 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0014.png' for reading
+[file @ 0000011cbf6bad80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 44378 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0015.png' for reading
+[file @ 0000011cbf6bad80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 44121 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0016.png' for reading
+[file @ 0000011cbf6bad80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 44121 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0017.png' for reading
+[file @ 0000011cbf6bad80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 44121 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0018.png' for reading
+[file @ 0000011cbf6bad80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 44703 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0019.png' for reading
+[file @ 0000011cbf6bad80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 44703 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0020.png' for reading
+[file @ 0000011cbf6bad80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 44703 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0021.png' for reading
+[file @ 0000011cbf6bad80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 42826 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0022.png' for reading
+[file @ 0000011cbf6bad80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 42826 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0023.png' for reading
+[file @ 0000011cbf6bad80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 42826 bytes read, 0 seeks
+[image2 @ 0000011cbeb1e400] Opening 'G:/WORKS/ESDR/Face Expressions/frame0024.png' for reading
+[file @ 0000011cbf6bad80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000011cbeb40300] Statistics: 37468 bytes read, 0 seeks
+Input #0, image2, from 'G:/WORKS/ESDR/Face Expressions/frame%04d.png':
+  Duration: 00:00:01.00, start: 0.000000, bitrate: N/A
+    Stream #0:0, 25, 1/25: Video: png, 1 reference frame, rgba(pc), 1600x1200 [SAR 3937:3937 DAR 4:3], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: input url G:/WORKS/ESDR/Face Expressions/palette.png.
+Successfully parsed a group of options.
+Opening an input file: G:/WORKS/ESDR/Face Expressions/palette.png.
+[NULL @ 0000011cbf7520c0] Opening 'G:/WORKS/ESDR/Face Expressions/palette.png' for reading
+[file @ 0000011cbf7526c0] Setting default whitelist 'file,crypto,data'
+[png_pipe @ 0000011cbf7520c0] Format png_pipe probed with size=2048 and score=99
+[png_pipe @ 0000011cbf7520c0] Before avformat_find_stream_info() pos: 0 bytes read:717 seeks:0 nb_streams:1
+[png_pipe @ 0000011cbf7520c0] After avformat_find_stream_info() pos: 717 bytes read:717 seeks:0 frames:1
+Input #1, png_pipe, from 'G:/WORKS/ESDR/Face Expressions/palette.png':
+  Duration: N/A, bitrate: N/A
+    Stream #1:0, 1, 1/25: Video: png, 1 reference frame, rgba(pc), 16x16 [SAR 1:1 DAR 1:1], 0/1, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: output url G:/WORKS/ESDR/Face Expressions/Sad.gif.
+Successfully parsed a group of options.
+Opening an output file: G:/WORKS/ESDR/Face Expressions/Sad.gif.
+[file @ 0000011cbeb22d80] Setting default whitelist 'file,crypto,data'
+Successfully opened the file.
+detected 8 logical cores
+Stream mapping:
+  Stream #0:0 (png) -> paletteuse:default
+  Stream #1:0 (png) -> paletteuse:palette
+  paletteuse -> Stream #0:0 (gif)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0000011cbeb1e400] Thread message queue blocking; consider raising the thread_queue_size option (current value: 8)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 9 times
+[graph 0 input from stream 0:0 @ 0000011cbeb9ee80] Setting 'video_size' to value '1600x1200'
+[graph 0 input from stream 0:0 @ 0000011cbeb9ee80] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 0:0 @ 0000011cbeb9ee80] Setting 'time_base' to value '1/24'
+[graph 0 input from stream 0:0 @ 0000011cbeb9ee80] Setting 'pixel_aspect' to value '3937/3937'
+[graph 0 input from stream 0:0 @ 0000011cbeb9ee80] Setting 'frame_rate' to value '24/1'
+[graph 0 input from stream 0:0 @ 0000011cbeb9ee80] w:1600 h:1200 pixfmt:rgba tb:1/24 fr:24/1 sar:3937/3937
+[graph 0 input from stream 1:0 @ 0000011cbf7db980] Setting 'video_size' to value '16x16'
+[graph 0 input from stream 1:0 @ 0000011cbf7db980] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 1:0 @ 0000011cbf7db980] Setting 'time_base' to value '1/25'
+[graph 0 input from stream 1:0 @ 0000011cbf7db980] Setting 'pixel_aspect' to value '1/1'
+[graph 0 input from stream 1:0 @ 0000011cbf7db980] Setting 'frame_rate' to value '25/1'
+[graph 0 input from stream 1:0 @ 0000011cbf7db980] w:16 h:16 pixfmt:rgba tb:1/25 fr:25/1 sar:1/1
+[format @ 0000011cbf7ce1c0] Setting 'pix_fmts' to value 'rgb8|bgr8|rgb4_byte|bgr4_byte|gray|pal8'
+[auto_scaler_0 @ 0000011cbf7ce480] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 0000011cbeb29680] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_paletteuse_0'
+[auto_scaler_1 @ 0000011cbf8aee40] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 0000011cbeb29680] auto-inserting filter 'auto_scaler_1' between the filter 'graph 0 input from stream 1:0' and the filter 'Parsed_paletteuse_0'
+[AVFilterGraph @ 0000011cbf7a5f00] query_formats: 5 queried, 2 merged, 2 already done, 0 delayed
+[swscaler @ 0000011cc33d4f80] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 0000011cbf7ce480] w:1600 h:1200 fmt:rgba sar:3937/3937 -> w:1600 h:1200 fmt:bgra sar:1/1 flags:0x2
+[swscaler @ 0000011cc3408dc0] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_1 @ 0000011cbf8aee40] w:16 h:16 fmt:rgba sar:1/1 -> w:16 h:16 fmt:bgra sar:1/1 flags:0x2
+[Parsed_paletteuse_0 @ 0000011cbeb29680] [framesync @ 0000011cbf81e848] Selected 1/600 time base
+[Parsed_paletteuse_0 @ 0000011cbeb29680] [framesync @ 0000011cbf81e848] Sync level 2
+Output #0, gif, to 'G:/WORKS/ESDR/Face Expressions/Sad.gif':
+  Metadata:
+    encoder         : Lavf58.45.100
+    Stream #0:0, 0, 1/100: Video: gif, 1 reference frame, pal8, 1600x1200 [SAR 1:1 DAR 4:3], 0/1, q=2-31, 200 kb/s, 24 fps, 100 tbn, 24 tbc (default)
+    Metadata:
+      encoder         : Lavc58.91.100 gif
+Clipping frame in rate conversion by 0.000008
+[gif @ 0000011cbeb22080] 1x1 image at pos (1599;1199) [area:1600x1200]
+    Last message repeated 1 times
+[gif @ 0000011cbeb22080] 682x294 image at pos (430;413) [area:1600x1200]
+[gif @ 0000011cbeb22080] 1x1 image at pos (1599;1199) [area:1600x1200]
+    Last message repeated 1 times
+[gif @ 0000011cbeb22080] 682x261 image at pos (430;445) [area:1600x1200]
+[gif @ 0000011cbeb22080] 1x1 image at pos (1599;1199) [area:1600x1200]
+frame=    8 fps=0.0 q=-0.0 size=      16kB time=00:00:00.30 bitrate= 427.1kbits/s speed=0.577x    [gif @ 0000011cbeb22080] 1x1 image at pos (1599;1199) [area:1600x1200]
+[gif @ 0000011cbeb22080] 683x201 image at pos (430;506) [area:1600x1200]
+[gif @ 0000011cbeb22080] 1x1 image at pos (1599;1199) [area:1600x1200]
+    Last message repeated 1 times
+[gif @ 0000011cbeb22080] 683x153 image at pos (430;554) [area:1600x1200]
+[gif @ 0000011cbeb22080] 1x1 image at pos (1599;1199) [area:1600x1200]
+    Last message repeated 1 times
+[gif @ 0000011cbeb22080] 682x153 image at pos (430;554) [area:1600x1200]
+[gif @ 0000011cbeb22080] 1x1 image at pos (1599;1199) [area:1600x1200]
+frame=   17 fps= 16 q=-0.0 size=      28kB time=00:00:00.68 bitrate= 336.5kbits/s speed=0.651x    [gif @ 0000011cbeb22080] 1x1 image at pos (1599;1199) [area:1600x1200]
+[gif @ 0000011cbeb22080] 682x201 image at pos (430;506) [area:1600x1200]
+[gif @ 0000011cbeb22080] 1x1 image at pos (1599;1199) [area:1600x1200]
+    Last message repeated 1 times
+[gif @ 0000011cbeb22080] 681x261 image at pos (430;444) [area:1600x1200]
+[gif @ 0000011cbeb22080] 1x1 image at pos (1599;1199) [area:1600x1200]
+    Last message repeated 1 times
+[gif @ 0000011cbeb22080] 680x293 image at pos (430;412) [area:1600x1200]
+[Parsed_paletteuse_0 @ 0000011cbeb29680] [framesync @ 0000011cbf81e848] Sync level 0
+frame=   25 fps= 16 q=-0.0 size=      37kB time=00:00:01.01 bitrate= 301.8kbits/s speed=0.636x    [out_0_0 @ 0000011cbf800b00] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+frame=   25 fps= 16 q=-0.0 Lsize=      40kB time=00:00:01.01 bitrate= 323.8kbits/s speed=0.635x    
+[AVIOContext @ 0000011cbeb1e140] Statistics: 0 seeks, 4 writeouts
+video:40kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.048943%
+Input file #0 (G:/WORKS/ESDR/Face Expressions/frame%04d.png):
+  Input stream #0:0 (video): 25 packets read (1077739 bytes); 25 frames decoded; 
+  Total: 25 packets (1077739 bytes) demuxed
+Input file #1 (G:/WORKS/ESDR/Face Expressions/palette.png):
+  Input stream #1:0 (video): 1 packets read (717 bytes); 1 frames decoded; 
+  Total: 1 packets (717 bytes) demuxed
+Output file #0 (G:/WORKS/ESDR/Face Expressions/Sad.gif):
+  Output stream #0:0 (video): 25 frames encoded; 25 packets muxed (40864 bytes); 
+  Total: 25 packets (40864 bytes) muxed
+26 frames successfully decoded, 0 decoding errors
+[AVIOContext @ 0000011cbeb22e40] Statistics: 0 seeks, 1 writeouts
+[AVIOContext @ 0000011cbeb29180] Statistics: 717 bytes read, 0 seeks

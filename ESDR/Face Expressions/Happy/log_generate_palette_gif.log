@@ -1,0 +1,173 @@
+ffmpeg version 4.3.1-2021-01-01-essentials_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev5, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      56. 51.100 / 56. 51.100
+  libavcodec     58. 91.100 / 58. 91.100
+  libavformat    58. 45.100 / 58. 45.100
+  libavdevice    58. 10.100 / 58. 10.100
+  libavfilter     7. 85.100 /  7. 85.100
+  libswscale      5.  7.100 /  5.  7.100
+  libswresample   3.  7.100 /  3.  7.100
+  libpostproc    55.  7.100 / 55.  7.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument 'C:/Users/Navaneeth Krishnan/AppData/Local/Temp/KritaFFmpegProgress.sLdwCx'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '24'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument 'G:/WORKS/ESDR/Face Expressions/Happy/frame%04d.png'.
+Reading option '-vf' ... matched as option 'vf' (set video filters) with argument 'palettegen'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option 'G:/WORKS/ESDR/Face Expressions/Happy/palette.png' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument C:/Users/Navaneeth Krishnan/AppData/Local/Temp/KritaFFmpegProgress.sLdwCx.
+[file @ 000002038f57d7c0] Setting default whitelist 'file,crypto,data'
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url G:/WORKS/ESDR/Face Expressions/Happy/frame%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 24.
+Successfully parsed a group of options.
+Opening an input file: G:/WORKS/ESDR/Face Expressions/Happy/frame%04d.png.
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0000.png' for reading
+[file @ 000002038f5c1a00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c9bc0] Statistics: 54277 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0001.png' for reading
+[file @ 000002038f5d7340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5d74c0] Statistics: 54277 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0002.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c8940] Statistics: 54277 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0003.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c8b00] Statistics: 49892 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0004.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c8cc0] Statistics: 49892 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0005.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c8e80] Statistics: 49892 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0006.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c9040] Statistics: 51667 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0007.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c9200] Statistics: 51667 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0008.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c9bc0] Statistics: 51667 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0009.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002039010a580] Statistics: 53817 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0010.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000203901179c0] Statistics: 53817 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0011.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c1a00] Statistics: 53817 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0012.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c2a00] Statistics: 55002 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0013.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c2a00] Statistics: 55002 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0014.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c2a00] Statistics: 55002 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0015.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c2a00] Statistics: 53817 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0016.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c2a00] Statistics: 53817 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0017.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c2a00] Statistics: 53817 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0018.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c2a00] Statistics: 51667 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0019.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c2a00] Statistics: 51667 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0020.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c2a00] Statistics: 51667 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0021.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c2a00] Statistics: 49892 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0022.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c2a00] Statistics: 49892 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0023.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c2a00] Statistics: 49892 bytes read, 0 seeks
+[image2 @ 000002038f5be340] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/frame0024.png' for reading
+[file @ 000002038f5d7400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002038f5c2a00] Statistics: 54277 bytes read, 0 seeks
+Input #0, image2, from 'G:/WORKS/ESDR/Face Expressions/Happy/frame%04d.png':
+  Duration: 00:00:01.00, start: 0.000000, bitrate: N/A
+    Stream #0:0, 25, 1/25: Video: png, 1 reference frame, rgba(pc), 1600x1200 [SAR 3937:3937 DAR 4:3], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: output url G:/WORKS/ESDR/Face Expressions/Happy/palette.png.
+Applying option vf (set video filters) with argument palettegen.
+Successfully parsed a group of options.
+Opening an output file: G:/WORKS/ESDR/Face Expressions/Happy/palette.png.
+Successfully opened the file.
+detected 8 logical cores
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> png (native))
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 8 times
+[graph 0 input from stream 0:0 @ 000002038f5c88c0] Setting 'video_size' to value '1600x1200'
+[graph 0 input from stream 0:0 @ 000002038f5c88c0] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 0:0 @ 000002038f5c88c0] Setting 'time_base' to value '1/24'
+[graph 0 input from stream 0:0 @ 000002038f5c88c0] Setting 'pixel_aspect' to value '3937/3937'
+[graph 0 input from stream 0:0 @ 000002038f5c88c0] Setting 'frame_rate' to value '24/1'
+[graph 0 input from stream 0:0 @ 000002038f5c88c0] w:1600 h:1200 pixfmt:rgba tb:1/24 fr:24/1 sar:3937/3937
+[format @ 00000203901e5c00] Setting 'pix_fmts' to value 'rgb24|rgba|rgb48be|rgba64be|pal8|gray|ya8|gray16be|ya16be|monob'
+[auto_scaler_0 @ 000002039023aa00] Setting 'flags' to value 'bicubic'
+[auto_scaler_0 @ 000002039023aa00] w:iw h:ih flags:'bicubic' interl:0
+[Parsed_palettegen_0 @ 000002038dd97640] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_palettegen_0'
+[auto_scaler_1 @ 000002039021c6c0] Setting 'flags' to value 'bicubic'
+[auto_scaler_1 @ 000002039021c6c0] w:iw h:ih flags:'bicubic' interl:0
+[format @ 00000203901e5c00] auto-inserting filter 'auto_scaler_1' between the filter 'Parsed_palettegen_0' and the filter 'format'
+[AVFilterGraph @ 000002038f5c2600] query_formats: 4 queried, 1 merged, 2 already done, 0 delayed
+[auto_scaler_1 @ 000002039021c6c0] picking rgba out of 10 ref:bgra alpha:1
+[swscaler @ 00000203902c4bc0] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 000002039023aa00] w:1600 h:1200 fmt:rgba sar:3937/3937 -> w:1600 h:1200 fmt:bgra sar:1/1 flags:0x4
+[swscaler @ 0000020393e15000] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_1 @ 000002039021c6c0] w:16 h:16 fmt:bgra sar:1/1 -> w:16 h:16 fmt:rgba sar:1/1 flags:0x4
+Output #0, image2, to 'G:/WORKS/ESDR/Face Expressions/Happy/palette.png':
+  Metadata:
+    encoder         : Lavf58.45.100
+    Stream #0:0, 0, 1/24: Video: png, 1 reference frame, rgba, 16x16 [SAR 1:1 DAR 1:1], 0/1, q=2-31, 200 kb/s, 24 fps, 24 tbn, 24 tbc
+    Metadata:
+      encoder         : Lavc58.91.100 png
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 24 times
+[Parsed_palettegen_0 @ 000002038dd97640] 255(+1) colors generated out of 914 colors; ratio=0.278993
+[Parsed_palettegen_0 @ 000002038dd97640] Dupped color: FF000200
+[Parsed_palettegen_0 @ 000002038dd97640] Dupped color: FF00ACF0
+[Parsed_palettegen_0 @ 000002038dd97640] Dupped color: FF00AFEB
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 000002038dd97640] Dupped color: FF00AFF2
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+Clipping frame in rate conversion by 0.000008
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[out_0_0 @ 000002038f5f4f80] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+[image2 @ 000002038f5c0c40] Opening 'G:/WORKS/ESDR/Face Expressions/Happy/palette.png' for writing
+[file @ 00000203902eeec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000020390202680] Statistics: 0 seeks, 1 writeouts
+frame=    1 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.04 bitrate=N/A speed=0.106x    
+[AVIOContext @ 000002038f5be200] Statistics: 0 seeks, 1 writeouts
+video:1kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+Input file #0 (G:/WORKS/ESDR/Face Expressions/Happy/frame%04d.png):
+  Input stream #0:0 (video): 25 packets read (1314370 bytes); 25 frames decoded; 
+  Total: 25 packets (1314370 bytes) demuxed
+Output file #0 (G:/WORKS/ESDR/Face Expressions/Happy/palette.png):
+  Output stream #0:0 (video): 1 frames encoded; 1 packets muxed (804 bytes); 
+  Total: 1 packets (804 bytes) muxed
+25 frames successfully decoded, 0 decoding errors

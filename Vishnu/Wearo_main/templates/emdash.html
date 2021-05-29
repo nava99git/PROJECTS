@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+   <head>
+      <title>Dashboard</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/emdash.css') }}">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <div class="pgopt">
+        <form action="/emdash/logout" method = "post">
+          <div class="column"><button type="submit" formaction="/emdash/attendance/null/{{ ID }}" name = "ATTENDANCE">ATTENDANCE</button></div>
+          <div class="column"><button type="submit" formaction="/emdash/sensor/null/{{ ID }}" name = "SR">SENSOR READINGS</button></div>
+          <div class="column"><button type="submit" formaction="/emdash/proximity/null/{{ ID }}" name = "PR">PROXIMITY</button></div>
+          <div class="column"><button type="submit" formaction="/emdash/canteen/null/{{ ID }}" name = "PR">CANTEEN</button></div>
+          <div class="column"><button type="submit" type="submit">Logout</button></div>
+        </form>
+      </div>
+      <div class="info">
+        <h1>WELCOME</h1>
+        <h2><br />{{ NAME}}<br />ID : {{ ID }}<br />RFID : {{ RFID }}</h2>
+      </div>
+   </body>
+</html>

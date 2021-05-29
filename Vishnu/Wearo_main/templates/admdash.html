@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+   <head>
+      <title>Admin Dashboard</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/admdash.css') }}">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <div class="pgopt">
+        <form action="/admdash/logout" method = "post">
+          <div class="column"><button type="submit" formaction="/admdash/attendance/null/{{ ID }}" name = "ATTENDANCE">ATTENDANCE</button></div>
+          <div class="column"><button type="submit" formaction="/admdash/sensor/null/{{ ID }}" name = "SENSOR">SENSOR READINGS</button></div>
+          <div class="column"><button type="submit" formaction="/admdash/proximity/null/{{ ID }}" name = "PROXIMITY">PROXIMITY</button></div>
+          <div class="column"><button type="submit" formaction="/admdash/canteen/null/{{ ID }}" name = "CANTEEN">CANTEEN</button></div>
+          <div class="column"><button type="submit" formaction="/admdash/emaddnew/null/{{ ID }}" name = "EMADDNEW">ADD NEW EMPLOYEE</button></div>
+          <div class="column"><button type="submit" formaction="/admdash/emupdate/null/{{ ID }}" name = "EMUPDATE">UPDATE EMPLOYEE DETAILS</button></div>
+          <div class="column"><button type="submit" formaction="/admdash/caddnew/null/{{ ID }}" name = "CADDNEW">ADD NEW ITEM</button></div>
+          <div class="column"><button type="submit" formaction="/admdash/cupdate/null/{{ ID }}" name = "CUPDATE">UPDATE ITEM DETAILS</button></div>
+          <div class="column"><button type="submit" type="submit">Logout</button></div>
+        </form>
+      </div>
+   </body>
+</html>

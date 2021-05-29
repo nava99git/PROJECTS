@@ -1,0 +1,205 @@
+ffmpeg version 4.3.1-2021-01-01-essentials_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev5, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      56. 51.100 / 56. 51.100
+  libavcodec     58. 91.100 / 58. 91.100
+  libavformat    58. 45.100 / 58. 45.100
+  libavdevice    58. 10.100 / 58. 10.100
+  libavfilter     7. 85.100 /  7. 85.100
+  libswscale      5.  7.100 /  5.  7.100
+  libswresample   3.  7.100 /  3.  7.100
+  libpostproc    55.  7.100 / 55.  7.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument 'C:/Users/Navaneeth Krishnan/AppData/Local/Temp/KritaFFmpegProgress.GrTuhT'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '24'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument 'G:/WORKS/ESDR/Face Expressions/Love/frame%04d.png'.
+Reading option '-crf' ... matched as AVOption 'crf' with argument '23'.
+Reading option '-preset' ... matched as AVOption 'preset' with argument 'medium'.
+Reading option '-profile:v' ... matched as option 'profile' (set profile) with argument 'baseline'.
+Reading option '-pix_fmt' ... matched as option 'pix_fmt' (set pixel format) with argument 'yuv420p'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option 'G:/WORKS/ESDR/Face Expressions/Love/Love.mp4' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument C:/Users/Navaneeth Krishnan/AppData/Local/Temp/KritaFFmpegProgress.GrTuhT.
+[file @ 000001dc074de200] Setting default whitelist 'file,crypto,data'
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url G:/WORKS/ESDR/Face Expressions/Love/frame%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 24.
+Successfully parsed a group of options.
+Opening an input file: G:/WORKS/ESDR/Face Expressions/Love/frame%04d.png.
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0000.png' for reading
+[file @ 000001dc07522bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc0752ad80] Statistics: 54277 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0001.png' for reading
+[file @ 000001dc07538500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07538680] Statistics: 54277 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0002.png' for reading
+[file @ 000001dc075385c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07529ac0] Statistics: 54277 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0003.png' for reading
+[file @ 000001dc075385c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07529c80] Statistics: 68852 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0004.png' for reading
+[file @ 000001dc075385c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07529e40] Statistics: 68852 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0005.png' for reading
+[file @ 000001dc075385c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc0752a000] Statistics: 68852 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0006.png' for reading
+[file @ 000001dc075385c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc0752a1c0] Statistics: 67494 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0007.png' for reading
+[file @ 000001dc075385c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc0752a380] Statistics: 67494 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0008.png' for reading
+[file @ 000001dc075385c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc0752ad80] Statistics: 67494 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0009.png' for reading
+[file @ 000001dc075385c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07523bc0] Statistics: 76544 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0010.png' for reading
+[file @ 000001dc07523bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07523cc0] Statistics: 76544 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0011.png' for reading
+[file @ 000001dc07523bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07523cc0] Statistics: 76544 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0012.png' for reading
+[file @ 000001dc07523bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07523cc0] Statistics: 67379 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0013.png' for reading
+[file @ 000001dc07523bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07523cc0] Statistics: 67379 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0014.png' for reading
+[file @ 000001dc07523bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07523cc0] Statistics: 67379 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0015.png' for reading
+[file @ 000001dc07523bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07523cc0] Statistics: 76544 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0016.png' for reading
+[file @ 000001dc07523bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07523cc0] Statistics: 76544 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0017.png' for reading
+[file @ 000001dc07523bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07523cc0] Statistics: 76544 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0018.png' for reading
+[file @ 000001dc07523bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07523cc0] Statistics: 67494 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0019.png' for reading
+[file @ 000001dc07523bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07523cc0] Statistics: 67494 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0020.png' for reading
+[file @ 000001dc07523bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07523cc0] Statistics: 67494 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0021.png' for reading
+[file @ 000001dc07523bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07523cc0] Statistics: 68852 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0022.png' for reading
+[file @ 000001dc07523bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07523cc0] Statistics: 68852 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0023.png' for reading
+[file @ 000001dc07523bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07523cc0] Statistics: 68852 bytes read, 0 seeks
+[image2 @ 000001dc0751e4c0] Opening 'G:/WORKS/ESDR/Face Expressions/Love/frame0024.png' for reading
+[file @ 000001dc07523bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000001dc07523cc0] Statistics: 54277 bytes read, 0 seeks
+Input #0, image2, from 'G:/WORKS/ESDR/Face Expressions/Love/frame%04d.png':
+  Duration: 00:00:01.00, start: 0.000000, bitrate: N/A
+    Stream #0:0, 25, 1/25: Video: png, 1 reference frame, rgba(pc), 1600x1200 [SAR 3937:3937 DAR 4:3], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: output url G:/WORKS/ESDR/Face Expressions/Love/Love.mp4.
+Applying option profile:v (set profile) with argument baseline.
+Applying option pix_fmt (set pixel format) with argument yuv420p.
+Successfully parsed a group of options.
+Opening an output file: G:/WORKS/ESDR/Face Expressions/Love/Love.mp4.
+[file @ 000001dc07599f00] Setting default whitelist 'file,crypto,data'
+Successfully opened the file.
+detected 8 logical cores
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 8 times
+[graph 0 input from stream 0:0 @ 000001dc07529a80] Setting 'video_size' to value '1600x1200'
+[graph 0 input from stream 0:0 @ 000001dc07529a80] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 0:0 @ 000001dc07529a80] Setting 'time_base' to value '1/24'
+[graph 0 input from stream 0:0 @ 000001dc07529a80] Setting 'pixel_aspect' to value '3937/3937'
+[graph 0 input from stream 0:0 @ 000001dc07529a80] Setting 'frame_rate' to value '24/1'
+[graph 0 input from stream 0:0 @ 000001dc07529a80] w:1600 h:1200 pixfmt:rgba tb:1/24 fr:24/1 sar:3937/3937
+[format @ 000001dc07529f80] Setting 'pix_fmts' to value 'yuv420p'
+[auto_scaler_0 @ 000001dc07529c00] Setting 'flags' to value 'bicubic'
+[auto_scaler_0 @ 000001dc07529c00] w:iw h:ih flags:'bicubic' interl:0
+[format @ 000001dc07529f80] auto-inserting filter 'auto_scaler_0' between the filter 'Parsed_null_0' and the filter 'format'
+[AVFilterGraph @ 000001dc080da340] query_formats: 4 queried, 2 merged, 1 already done, 0 delayed
+[auto_scaler_0 @ 000001dc07529c00] w:1600 h:1200 fmt:rgba sar:3937/3937 -> w:1600 h:1200 fmt:yuv420p sar:1/1 flags:0x4
+[libx264 @ 000001dc07597b00] using mv_range_thread = 40
+[libx264 @ 000001dc07597b00] using SAR=1/1
+[libx264 @ 000001dc07597b00] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 000001dc07597b00] profile Constrained Baseline, level 4.0, 4:2:0, 8-bit
+[libx264 @ 000001dc07597b00] 264 - core 161 r3027 4121277 - H.264/MPEG-4 AVC codec - Copyleft 2003-2020 - http://www.videolan.org/x264.html - options: cabac=0 ref=3 deblock=1:0:0 analyse=0x1:0x111 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=0 weightp=0 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'G:/WORKS/ESDR/Face Expressions/Love/Love.mp4':
+  Metadata:
+    encoder         : Lavf58.45.100
+    Stream #0:0, 0, 1/12288: Video: h264 (libx264), 1 reference frame (avc1 / 0x31637661), yuv420p, 1600x1200 [SAR 1:1 DAR 4:3], 0/1, q=-1--1, 24 fps, 12288 tbn, 24 tbc
+    Metadata:
+      encoder         : Lavc58.91.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+Clipping frame in rate conversion by 0.000008
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 25 times
+[out_0_0 @ 000001dc0752a140] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+[libx264 @ 000001dc07597b00] frame=   0 QP=10.60 NAL=3 Slice:I Poc:0   I:7500 P:0    SKIP:0    size=7654 bytes
+[libx264 @ 000001dc07597b00] frame=   1 QP=12.00 NAL=2 Slice:P Poc:2   I:5    P:76   SKIP:7419 size=173 bytes
+[libx264 @ 000001dc07597b00] frame=   2 QP=15.29 NAL=2 Slice:P Poc:4   I:0    P:2    SKIP:7498 size=21 bytes
+[libx264 @ 000001dc07597b00] frame=   3 QP=12.81 NAL=2 Slice:P Poc:6   I:192  P:170  SKIP:7138 size=2543 bytes
+[libx264 @ 000001dc07597b00] frame=   4 QP=17.73 NAL=2 Slice:P Poc:8   I:6    P:12   SKIP:7482 size=78 bytes
+[libx264 @ 000001dc07597b00] frame=   5 QP=8.88 NAL=2 Slice:P Poc:10  I:8    P:1    SKIP:7491 size=35 bytes
+[libx264 @ 000001dc07597b00] frame=   6 QP=11.85 NAL=2 Slice:P Poc:12  I:171  P:153  SKIP:7176 size=1515 bytes
+[libx264 @ 000001dc07597b00] frame=   7 QP=9.27 NAL=2 Slice:P Poc:14  I:7    P:9    SKIP:7484 size=74 bytes
+[libx264 @ 000001dc07597b00] frame=   8 QP=9.98 NAL=2 Slice:P Poc:16  I:1    P:0    SKIP:7499 size=17 bytes
+[libx264 @ 000001dc07597b00] frame=   9 QP=21.72 NAL=2 Slice:P Poc:18  I:77   P:145  SKIP:7278 size=3448 bytes
+[libx264 @ 000001dc07597b00] frame=  10 QP=9.17 NAL=2 Slice:P Poc:20  I:7    P:10   SKIP:7483 size=61 bytes
+[libx264 @ 000001dc07597b00] frame=  11 QP=9.12 NAL=2 Slice:P Poc:22  I:2    P:1    SKIP:7497 size=26 bytes
+[libx264 @ 000001dc07597b00] frame=  12 QP=16.72 NAL=2 Slice:P Poc:24  I:111  P:230  SKIP:7159 size=1609 bytes
+[libx264 @ 000001dc07597b00] frame=  13 QP=19.53 NAL=2 Slice:P Poc:26  I:3    P:8    SKIP:7489 size=63 bytes
+[libx264 @ 000001dc07597b00] frame=  14 QP=7.31 NAL=2 Slice:P Poc:28  I:2    P:2    SKIP:7496 size=24 bytes
+[libx264 @ 000001dc07597b00] frame=  15 QP=11.96 NAL=2 Slice:P Poc:30  I:130  P:200  SKIP:7170 size=1573 bytes
+[libx264 @ 000001dc07597b00] frame=  16 QP=12.67 NAL=2 Slice:P Poc:32  I:5    P:0    SKIP:7495 size=46 bytes
+[libx264 @ 000001dc07597b00] frame=  17 QP=21.44 NAL=2 Slice:P Poc:34  I:0    P:2    SKIP:7498 size=28 bytes
+[libx264 @ 000001dc07597b00] frame=  18 QP=12.11 NAL=2 Slice:P Poc:36  I:109  P:221  SKIP:7170 size=1761 bytes
+[libx264 @ 000001dc07597b00] frame=  19 QP=13.12 NAL=2 Slice:P Poc:38  I:3    P:8    SKIP:7489 size=49 bytes
+[libx264 @ 000001dc07597b00] frame=  20 QP=13.00 NAL=2 Slice:P Poc:40  I:0    P:0    SKIP:7500 size=12 bytes
+[libx264 @ 000001dc07597b00] frame=  21 QP=13.38 NAL=2 Slice:P Poc:42  I:140  P:149  SKIP:7211 size=1077 bytes
+[libx264 @ 000001dc07597b00] frame=  22 QP=12.00 NAL=2 Slice:P Poc:44  I:6    P:6    SKIP:7488 size=50 bytes
+[libx264 @ 000001dc07597b00] frame=  23 QP=13.00 NAL=2 Slice:P Poc:46  I:1    P:1    SKIP:7498 size=17 bytes
+[libx264 @ 000001dc07597b00] frame=  24 QP=14.33 NAL=2 Slice:P Poc:48  I:181  P:67   SKIP:7252 size=1005 bytes
+Not writing 'clli' atom. No content light level info.
+Not writing 'mdcv' atom. Missing mastering metadata.
+frame=   25 fps=0.0 q=-1.0 Lsize=      24kB time=00:00:01.00 bitrate= 196.2kbits/s speed=2.05x    
+[AVIOContext @ 000001dc0751e340] Statistics: 0 seeks, 1 writeouts
+video:23kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 3.963880%
+Input file #0 (G:/WORKS/ESDR/Face Expressions/Love/frame%04d.png):
+  Input stream #0:0 (video): 25 packets read (1696585 bytes); 25 frames decoded; 
+  Total: 25 packets (1696585 bytes) demuxed
+Output file #0 (G:/WORKS/ESDR/Face Expressions/Love/Love.mp4):
+  Output stream #0:0 (video): 25 frames encoded; 25 packets muxed (23588 bytes); 
+  Total: 25 packets (23588 bytes) muxed
+25 frames successfully decoded, 0 decoding errors
+[AVIOContext @ 000001dc07523bc0] Statistics: 2 seeks, 4 writeouts
+[libx264 @ 000001dc07597b00] frame I:1     Avg QP:10.60  size:  7654
+[libx264 @ 000001dc07597b00] frame P:24    Avg QP:13.27  size:   638
+[libx264 @ 000001dc07597b00] mb I  I16..4: 99.3%  0.0%  0.7%
+[libx264 @ 000001dc07597b00] mb P  I16..4:  0.6%  0.0%  0.1%  P16..4:  0.6%  0.2%  0.1%  0.0%  0.0%    skip:98.5%
+[libx264 @ 000001dc07597b00] coded y,uvDC,uvAC intra: 1.0% 2.1% 1.8% inter: 0.1% 0.2% 0.1%
+[libx264 @ 000001dc07597b00] i16 v,h,dc,p: 96%  3%  1%  0%
+[libx264 @ 000001dc07597b00] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 15% 20% 47%  5%  3%  3%  2%  2%  3%
+[libx264 @ 000001dc07597b00] i8c dc,h,v,p: 93%  4%  3%  0%
+[libx264 @ 000001dc07597b00] ref P L0: 88.1%  9.7%  2.2%
+[libx264 @ 000001dc07597b00] kb/s:176.33

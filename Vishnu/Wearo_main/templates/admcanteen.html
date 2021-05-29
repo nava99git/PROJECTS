@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+   <head>
+      <title>Canteen Transactions</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/admcanteen.css') }}">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+	  <form action="/admdash/{{ ID }}">
+		  <button name="dashboard" type="submit">Go To Dashboard</button>
+	  </form>
+      <h2>Canteen Transactions</h2>
+      <div class="details">
+		  <form action="/admdash/canteen/check/{{ ID }}" method="post">
+		  	  ID: <div class="underline"><input type="number" name="emID"></div> <br />
+			  Start Date: <div class="underline"><input type="date" name="StartDate"></div> <br />
+			  End Date: <div class="underline"><input type="date" name="EndDate">  <br /></div>
+			  <button type="submit" name= "form">SUBMIT</button>
+		  </form>
+		  {% if rows %}
+	      <div class="Transactions">
+	         <table border = 1>
+	         <thead>
+	            <td>TIMESTAMP</td>
+	            <td>ID</td>
+	            <td>Amount</td>
+	         </thead>
+	         
+	         {% for row in rows %}
+	            <tr>
+	               <td>{{row["TIMESTAMP"]}}</td>
+	               <td>{{row["ID"]}}</td>
+	               <td>{{row["AMOUNT"]}}</td>
+	            </tr>
+	         {% endfor %}
+	         </table>
+	      </div>
+      	  {% endif %}
+      </div>
+      <p1 class = 'Error'>{{ Error }}</p1>
+   </body>
+</html>
