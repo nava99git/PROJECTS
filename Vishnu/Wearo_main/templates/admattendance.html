@@ -12,11 +12,12 @@
       <div class="details">
 		  <form action="/admdash/attendance/check/{{ ID }}" method="post">
 		  	  ID: <div class="underline"><input type="number" name="emID"></div> <br />
-			  SELECT<br />
-			  <select name = "select">
-				 <option value = "all">ALL</option>
-				 <option value = "PRESENT">PRESENT</option>
-				 <option value = "ABSENT">ABSENT</option>
+			  POINT<br />
+			  <select name = "POINT">
+				 <option value = "NULL">NULL</option>
+				 <option value = "ENTRANCE">ENTRANCE</option>
+				 <option value = "CANTEEN">CANTEEN</option>
+				 <option value = "CONFERENCEHALL">CONFERENCE HALL</option>
 			  </select><br /><br />
 			  Start Date: <div class="underline"><input type="date" name="StartDate" required></div> <br />
 			  End Date: <div class="underline"><input type="date" name="EndDate">  <br /></div>
@@ -28,14 +29,14 @@
 	         <thead>
 	            <td>TIMESTAMP</td>
 	            <td>ID</td>
-	            <td>STATUS</td>
+	            <td>POINT</td>
 	         </thead>
 	         
 	         {% for row in rows %}
 	            <tr>
 	               <td>{{row["TIMESTAMP"]}}</td>
 	               <td>{{row["ID"]}}</td>
-	               <td>{{row["STATUS"]}}</td>
+	               <td>{{row["POINT"]}}</td>
 	            </tr>
 	         {% endfor %}
 	         </table>

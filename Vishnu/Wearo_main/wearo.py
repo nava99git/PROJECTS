@@ -2,6 +2,7 @@ from flask import Flask, request, render_template, redirect, url_for
 from flask_login import LoginManager, UserMixin, login_required, login_user, logout_user, current_user
 import sqlite3
 import datetime as dt
+import calendar
 import os.path
 import json
 
@@ -10,7 +11,6 @@ app = Flask(__name__)
 mainDB = 'databases/wearoDB.db'
 canteenDB = 'databases/Canteen.db'
 admn_ID = '1';
-admn_pass = '4321'
 RSSIThreshold = -60;
 app.secret_key = 'thisisaverysecretkey'
 login_manager = LoginManager(app)
@@ -60,6 +60,7 @@ def spo2():
 	cur = conn.cursor()
 	cur.execute("INSERT INTO SensorRead VALUES (datetime('now', 'localtime'), %d , %d)" %(sensor['spo2'], sensor ['temp']))
 	conn.commit()
+	conn.close()
 	return ''
 
 @app.route('/prox', methods = ['POST'])
@@ -98,6 +99,33 @@ def prox():
  		conn.commit()
  		conn.close()
  	return ''
+
+@app.route('/attendance', methods = ['POST'])
+def attendance():
+	attendance = json.loads(request.data)
+	print("RFID : %s Point : %s" % (attendance['RFID'], attendance['POINT']))
+	try:
+		conn = sqlite3.connect(mainDB)
+	except:
+		print('Database Busy!')
+		return ''
+	cur = conn.cursor()
+	cur.execute("SELECT ID FROM EmList WHERE RFID = %s" % (attendance['RFID']))
+	ID = None
+	try:
+		ID = cur.fetchone()[0]
+	except:
+		conn.close()
+		print("INVALID RFID!")
+		return 'INVALID RFID'
+	if ID != None:
+		cur.execute("INSERT INTO AttendanceList VALUES (datetime('now', 'localtime'), %s, %s , '%s')" %(ID, attendance['RFID'], attendance['POINT']))
+		conn.commit()
+		conn.close()
+		return 'AttendanceMarked'
+	else:
+		conn.close()
+		return 'INVALID ID'
 
 @app.route('/')
 def index():
@@ -209,7 +237,10 @@ def changepin(state, ID):
 					conn.commit()
 					conn.close()
 					print("Pin Changed Succesfully")
-					return redirect(url_for('emdash', ID = ID))
+					if ID == 1:
+						return redirect(url_for('admdash', ID = ID))
+					else:
+						return redirect(url_for('emdash', ID = ID))
 			except:
 				print("Something went wrong")
 				return redirect(url_for('emlogin', state = 'null'))
@@ -254,7 +285,7 @@ def emattendance(state, ID):
 			return render_template('emattendance.html', **templateData)
 		conn.row_factory = sqlite3.Row
 		cur = conn.cursor()
-		SELECT = request.form['select']
+		POINT = request.form['POINT']
 		StartDate = request.form['StartDate']
 		EndDate = request.form['EndDate']
 		# print("%s %s %s" %(SELECT,StartDate, EndDate))
@@ -267,8 +298,8 @@ def emattendance(state, ID):
 		except:      
 			pass
 		filters += " AND ID = '%d'" % (ID)
-		if SELECT == 'PRESENT' or SELECT == 'ABSENT':
-			filters += " AND STATUS = '%s'" % (SELECT)
+		if POINT != 'NULL':
+			filters += " AND POINT = '%s'" % (POINT)
 		print(filters)
 		try:
 			cur.execute("SELECT * FROM AttendanceList %s" %(filters))
@@ -423,7 +454,16 @@ def adminlogin(state = 'null'):
 		return render_template('adminlogin.html')
 	elif state == 'check':
 		Pin = request.form['Pin']
-		if Pin == admn_pass:
+		try:
+			conn =  sqlite3.connect(mainDB)
+		except:
+			templateData = {'LoginError' : 'Database is busy!'}
+			return render_template('adminlogin.html', **templateData)
+		cur = conn.cursor()
+		cur.execute("SELECT PIN FROM EmList WHERE ID = %s" % (admn_ID))
+		admn_pass = cur.fetchone()[0]
+		conn.close()
+		if int(Pin) == int(admn_pass):
 			Us = load_user(int(admn_ID))
 			login_user(Us, remember=True)
 			return redirect(url_for('admdash', ID = int(admn_ID)))
@@ -458,7 +498,7 @@ def admttendance(state, ID):
 		conn.row_factory = sqlite3.Row
 		cur = conn.cursor()
 		emID = request.form['emID']
-		SELECT = request.form['select']
+		POINT = request.form['POINT']
 		StartDate = request.form['StartDate']
 		EndDate = request.form['EndDate']
 		# print("%s %s %s" %(SELECT,StartDate, EndDate))
@@ -472,8 +512,8 @@ def admttendance(state, ID):
 			pass
 		if emID != '':
 			filters += " AND ID = '%s'" % (emID)
-		if SELECT == 'PRESENT' or SELECT == 'ABSENT':
-			filters += " AND STATUS = '%s'" % (SELECT)
+		if POINT != 'NULL':
+			filters += " AND POINT = '%s'" % (POINT)
 		print(filters)
 		try:
 			cur.execute("SELECT * FROM AttendanceList %s" %(filters))
@@ -810,10 +850,71 @@ def cupdate(state, ID):
 			templateData = {'Error': 'Product Updated'}
 			return render_template('cupdate.html', **templateData, ID = ID)
 
+@app.route("/admdash/salary/<state>/<int:ID>", methods=['POST'])
+@login_required
+def salary(state, ID):
+	curUsrID = current_user.get_id()
+	if int(curUsrID) != ID:
+		logout_user()
+		return redirect(url_for('index'))
+	if state == 'null':
+		return render_template('salary.html', ID = ID)
+	elif state == 'check':
+		emID = request.form['emID']
+		StartDate = request.form['StartDate']
+		EndDate = request.form['EndDate']
+
+		try:
+			conn = sqlite3.connect(mainDB)
+		except:
+			print("UNABLE TO OPEN wearoDB!")
+			templateData = {'Error' : "DataBase is Busy! Try in a few"}
+			return render_template('salary.html', **templateData, ID = ID)
+
+		cur = conn.cursor();
+		cur.execute("SELECT SALARY FROM EmList WHERE ID = %s" % (emID))
+		# try:
+		SALARY = int(cur.fetchone()[0])
+		print("Employee salary : %d" % (SALARY))
+		# except:
+		# 	templateData = {'Error' : "Unable to fetch salary!"}
+		# 	return render_template('salary.html', **templateData, ID = ID)
+		conn.close()
+		try:
+			conn = sqlite3.connect(canteenDB)
+		except:
+			templateData = {'Error' : "DataBase is Busy! Try in a few"}
+			return render_template('salary.html', **templateData, ID = ID)
+		cur = conn.cursor()
+		filters = ''
+		try:
+			t = dt.datetime.strptime(StartDate, '%Y-%m-%d')
+			filters = "WHERE date(TIMESTAMP) BETWEEN '%s' AND date('now')" % (StartDate)
+			t = dt.datetime.strptime(EndDate, '%Y-%m-%d')
+			filters = "WHERE date(TIMESTAMP) BETWEEN '%s' AND '%s'" % (StartDate, EndDate)
+		except:      
+			pass
+		if filters == '':
+			filters = "WHERE ID = '%s'" % (emID)
+		else:
+			filters += " AND ID = '%s'" % (emID)
+
+		cur.execute("SELECT SUM(Amount) FROM Transactions %s" % (filters))
+		totalTransactions = 0
+		try:
+			totalTransactions = int(cur.fetchone()[0])
+			print("Total Canteen Transactions : %d" % (totalTransactions))
+		except:
+			print("No Transactions for this Employee")
+		FinalSalary = SALARY - totalTransactions
+		print("Final salary : %d" % (FinalSalary))
+		templateData = {'Error' : 'Salary Succesfully fetched!'}
+		return render_template('salary.html', ID = ID, **templateData, Ctransactions = totalTransactions, salary = SALARY, FinalSalary = FinalSalary)
+
 @app.route("/admdash/logout", methods=['POST'])
 @login_required
 def admlogout():
     logout_user()
     return redirect(url_for('index'))			
 
-app.run(host='192.168.29.212', port= 8090, debug=True)
+app.run(host='192.168.1.8', port= 8090, debug=True)

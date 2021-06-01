@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flask Dynamic Update</title>
+</head>
+	<body>
+		<div id = "place_for_dynamic_value"></div>
+		<img id = "frame" src = "{{ url_for('videofeed') }}">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+			setInterval(function(){
+				$.ajax({
+			      url: "/dynamic",
+			      type: "get",
+			      // data: {jsdata: text},
+			      success: function(response) {
+			        $("#place_for_dynamic_value").html(response);
+			      },
+			      error: function(xhr) {
+			        //Do Something to handle error
+			      }
+			    });
+			}, 1000)
+		</script>
+	</body>
+</html>
+

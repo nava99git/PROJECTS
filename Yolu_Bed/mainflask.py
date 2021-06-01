@@ -62,8 +62,8 @@ def AngleIntent(angle,room):
     except:
         return statement('That is an invalid angle')
 
-@ask.intent('PulseIntent', mapping = {'pulse':'pulse'})
-def PulseIntent(pulse,room):
+@ask.intent('PulseIntent')
+def PulseIntent(room):
     msg = json.loads('{"pulse" : true}')
     ser.write(msg)
     startTime = t.time()

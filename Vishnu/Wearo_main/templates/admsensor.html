@@ -26,7 +26,12 @@
 	         </thead>
 	         
 	         {% for row in rows %}
+	         	{% if row["SPO2"] <= 88 %}
+	            <tr bgcolor="RED">
+	            {% endif %}
+	            {% if row["SPO2"] > 88 %}
 	            <tr>
+	            {% endif %}
 	               <td>{{row["TIMESTAMP"]}}</td>
 	               <td>{{row["SPO2"]}}</td>
 	               <td>{{row["TEMPERATURE"]}}</td>
